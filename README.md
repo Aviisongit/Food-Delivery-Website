@@ -1,0 +1,3 @@
+This project is a comprehensive full-stack food delivery platform built with the MERN stack (MongoDB, Express.js, React.js, and Node.js). It features a secure user authentication system for account creation and 
+login, coupled with a dynamic shopping cart that allows users to seamlessly manage their orders. To ensure a complete end-to-end customer experience, the application integrates the Stripe payment gateway for secure 
+transactions and provides real-time order status updates. For administrative purposes, the platform also includes a robust backend server and a dedicated admin panel for managing the platform's content and operations.

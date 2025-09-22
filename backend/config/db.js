@@ -1,6 +1,11 @@
 import mongoose from "mongoose";
 
 export const connectDB = async () => {
-  // Use the variable from the .env file
-  await mongoose.connect(process.env.MONGO_URI); 
+    try {
+        await mongoose.connect(process.env.MONGO_URI);
+        console.log("Database Connected Successfully"); // Success message
+    } catch (error) {
+        console.error("Database Connection Failed:", error); // Error message
+        process.exit(1); // Exit the process with failure
+    }
 };
